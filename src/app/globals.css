@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+    --background: #09090b;
+    --foreground: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.08), transparent 32rem),
+        radial-gradient(circle at top right, rgba(255, 255, 255, 0.05), transparent 28rem),
+        var(--background);
+    color: var(--foreground);
+}
+
+::selection {
+    background: white;
+    color: #09090b;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
