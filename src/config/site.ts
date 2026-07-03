@@ -5,7 +5,7 @@ export const siteConfig = {
     location: "South Africa",
     email: "matthuswilkinson0@gmail.com",
 
-    siteUrl: "https://matt-wilkinson-portfolio.vercel.app",
+    siteUrl: "https://matt-portfolio-mauve.vercel.app",
 
     title: "Matt Wilkinson | Front-End & Mobile Developer",
     description:
