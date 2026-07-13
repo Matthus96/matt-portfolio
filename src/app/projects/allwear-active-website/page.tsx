@@ -1,6 +1,7 @@
 import CaseStudyLayout from "../../../components/CaseStudyLayout";
 import type { Metadata } from "next";
 import JsonLd from "../../../components/JsonLd";
+import ProjectImageGrid from "../../../components/ProjectImageGrid";
 
 export const metadata: Metadata = {
     title: "Allwear Active Website Case Study",
@@ -115,6 +116,27 @@ export default function AllwearActiveWebsitePage() {
             outcomeTitle="A real-world commerce platform with room to scale."
             outcomeDescription="This project demonstrates my ability to build a polished, responsive business website with real product logic, backend integration and deployment workflows. It also shows how my design background helps me create interfaces that are both functional and visually considered."
         >
+
+            <ProjectImageGrid
+                images={[
+                    {
+                        src: "/images/projects/allwear-website/store.png",
+                        alt: "Allwear Active shop page screenshot",
+                        label: "Shop page",
+                    },
+                    {
+                        src: "/images/projects/allwear-website/product.png",
+                        alt: "Allwear Active product page screenshot",
+                        label: "Product page",
+                    },
+                    {
+                        src: "/images/projects/allwear-website/allwear-web.png",
+                        alt: "Allwear Active website homepage screenshot",
+                        label: "Homepage preview",
+                    },
+                ]}
+            />
+
             {/* VISUAL PREVIEW */}
             <section className="mx-auto max-w-6xl px-5 pb-20">
                 <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-3 shadow-2xl">

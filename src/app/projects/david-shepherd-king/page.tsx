@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import CaseStudyLayout from "../../../components/CaseStudyLayout";
 import JsonLd from "../../../components/JsonLd";
+import ProjectImageGrid from "../../../components/ProjectImageGrid";
 
 export const metadata: Metadata = {
     title: "David: Rise of the Shepherd King Case Study",
@@ -111,6 +112,27 @@ export default function DavidShepherdKingPage() {
             outcomeTitle="A creative project showing logic, storytelling and UI thinking."
             outcomeDescription="This project adds creative depth to my portfolio by showing that I can build more than commerce interfaces. It demonstrates interactive thinking, game-like logic, content progression and mobile user experience design."
         >
+
+            <ProjectImageGrid
+                images={[
+                    {
+                        src: "/images/projects/david-game/map.png",
+                        alt: "David Rise of the Shepherd King journey map screen",
+                        label: "Journey map",
+                    },
+                    {
+                        src: "/images/projects/david-game/quiz.png",
+                        alt: "David Rise of the Shepherd King quiz screen",
+                        label: "Quiz flow",
+                    },
+                    {
+                        src: "/images/projects/david-game/cover.png",
+                        alt: "David Rise of the Shepherd King app preview",
+                        label: "Game preview",
+                    },
+                ]}
+            />
+
             {/* GAME VISUAL PREVIEW */}
             <section className="mx-auto max-w-6xl px-5 pb-20">
                 <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-3 shadow-2xl">

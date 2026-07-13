@@ -1,6 +1,7 @@
 import CaseStudyLayout from "../../../components/CaseStudyLayout";
 import type { Metadata } from "next";
 import JsonLd from "../../../components/JsonLd";
+import ProjectImageGrid from "../../../components/ProjectImageGrid";
 
 export const metadata: Metadata = {
     title: "Allwear App Case Study",
@@ -115,6 +116,27 @@ export default function AllwearAppPage() {
             outcomeTitle="A practical app build with real deployment experience."
             outcomeDescription="This project shows my ability to move beyond static interface work and build functional mobile experiences connected to real data, real devices and real release workflows."
         >
+
+            <ProjectImageGrid
+                images={[
+                    {
+                        src: "/images/projects/allwear-app/home.png",
+                        alt: "Allwear App home screen screenshot",
+                        label: "Home screen",
+                    },
+                    {
+                        src: "/images/projects/allwear-app/product.png",
+                        alt: "Allwear App product screen screenshot",
+                        label: "Product screen",
+                    },
+                    {
+                        src: "/images/projects/allwear-app/cover.png",
+                        alt: "Allwear App mobile preview screenshot",
+                        label: "App preview",
+                    },
+                ]}
+            />
+
             {/* APP VISUAL PREVIEW */}
             <section className="mx-auto max-w-6xl px-5 pb-20">
                 <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
