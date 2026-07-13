@@ -125,7 +125,7 @@ export default function AllwearActiveWebsitePage() {
                         label: "Shop page",
                     },
                     {
-                        src: "/images/projects/allwear-website/product.png",
+                        src: "/images/projects/allwear-website/product-page.png",
                         alt: "Allwear Active product page screenshot",
                         label: "Product page",
                     },
@@ -147,32 +147,30 @@ export default function AllwearActiveWebsitePage() {
                             <span className="h-3 w-3 rounded-full bg-white/20" />
 
                             <div className="ml-4 hidden flex-1 rounded-full bg-white/5 px-4 py-2 text-xs text-zinc-500 sm:block">
-                                allwear-active.vercel.app
+                                www.allwearactive.co.za
                             </div>
                         </div>
 
                         <div className="grid gap-4 p-5 lg:grid-cols-[1.3fr_0.7fr]">
                             <div className="min-h-[360px] rounded-[1.5rem] bg-white p-8 text-zinc-950">
                                 <p className="text-xs font-black uppercase tracking-[0.25em] text-zinc-400">
-                                    Allwear Active
+                                    Allwear Active Presents
                                 </p>
 
                                 <h2 className="mt-6 max-w-xl text-4xl font-black tracking-tight sm:text-6xl">
-                                    Premium activewear and lifestyle apparel.
+                                    Move With Purpose.
                                 </h2>
 
                                 <p className="mt-5 max-w-md text-sm leading-7 text-zinc-500">
-                                    A product-focused shopping interface designed
-                                    for clean browsing, strong visuals and
-                                    responsive customer journeys.
+                                    Performance apparel made for training, movement, and everyday wear.
                                 </p>
 
                                 <div className="mt-8 flex gap-3">
                                     <div className="rounded-full bg-zinc-950 px-5 py-3 text-xs font-bold text-white">
-                                        Shop Now
+                                        Shop T-Shirts
                                     </div>
                                     <div className="rounded-full border border-zinc-200 px-5 py-3 text-xs font-bold text-zinc-950">
-                                        View Range
+                                        Coming Soon
                                     </div>
                                 </div>
                             </div>

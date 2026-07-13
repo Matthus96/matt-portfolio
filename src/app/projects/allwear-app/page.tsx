@@ -118,9 +118,16 @@ export default function AllwearAppPage() {
         >
 
             <ProjectImageGrid
+                variant="mobile"
                 images={[
                     {
-                        src: "/images/projects/allwear-app/home.png",
+                        src: "/videos/preview.mp4",
+                        alt: "Allwear App video preview",
+                        label: "App walkthrough",
+                        type: "video",
+                    },
+                    {
+                        src: "/images/projects/allwear-app/Allwear_App.png",
                         alt: "Allwear App home screen screenshot",
                         label: "Home screen",
                     },
@@ -128,11 +135,6 @@ export default function AllwearAppPage() {
                         src: "/images/projects/allwear-app/product.png",
                         alt: "Allwear App product screen screenshot",
                         label: "Product screen",
-                    },
-                    {
-                        src: "/images/projects/allwear-app/cover.png",
-                        alt: "Allwear App mobile preview screenshot",
-                        label: "App preview",
                     },
                 ]}
             />

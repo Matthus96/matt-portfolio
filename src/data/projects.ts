@@ -21,7 +21,7 @@ export const projects = [
         description:
             "A live mobile app for product browsing, cart management, order flow, product catalogues and customer account management.",
         href: "/projects/allwear-app",
-        image: "/images/projects/allwear-app/Allwear-App.png",
+        image: "/images/projects/allwear-app/Allwear_App.png",
         tags: ["Expo", "React Native", "Appwrite", "EAS", "App Store"],
         featured: true,
         links: {
