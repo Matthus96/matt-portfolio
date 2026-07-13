@@ -6,6 +6,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { siteConfig } from "../config/site";
+import JsonLd from "../components/JsonLd";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -71,12 +72,48 @@ export default function RootLayout({
 }: Readonly<{
     children: ReactNode;
 }>) {
+    const personJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: siteConfig.name,
+        url: siteConfig.siteUrl,
+        jobTitle: siteConfig.role,
+        email: siteConfig.email,
+        address: {
+            "@type": "PostalAddress",
+            addressCountry: "ZA",
+        },
+        knowsAbout: [
+            "Front-End Development",
+            "Mobile App Development",
+            "React",
+            "Next.js",
+            "React Native",
+            "Expo",
+            "TypeScript",
+            "Tailwind CSS",
+            "Appwrite",
+            "E-commerce Development",
+        ],
+    };
+
+    const websiteJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: siteConfig.name,
+        url: siteConfig.siteUrl,
+        description: siteConfig.description,
+    };
+
     return (
         <html
             lang="en"
             className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}
         >
             <body className="min-h-screen bg-zinc-950 text-white antialiased">
+                <JsonLd data={personJsonLd} />
+                <JsonLd data={websiteJsonLd} />
+
                 <Navbar />
 
                 <main className="min-h-screen">{children}</main>

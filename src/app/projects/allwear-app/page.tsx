@@ -58,6 +58,11 @@ export default function AllwearAppPage() {
             eyebrow="Mobile Commerce App"
             title="Allwear App"
             description="A mobile commerce app built for Allwear, focused on product browsing, cart flow, ordering, catalogue management and app-store-ready deployment."
+            links={{
+                appStore: "",
+                playStore: "",
+                github: "",
+            }}
             snapshot={[
                 { label: "Role", value: "Mobile Developer" },
                 { label: "Type", value: "Mobile / Commerce" },

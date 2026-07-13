@@ -10,6 +10,13 @@ type SnapshotItem = {
     value: string;
 };
 
+type ProjectLinks = {
+    live?: string;
+    github?: string;
+    appStore?: string;
+    playStore?: string;
+};
+
 type CaseStudyLayoutProps = {
     eyebrow: string;
     title: string;
@@ -22,6 +29,7 @@ type CaseStudyLayoutProps = {
     techStack: string[];
     outcomeTitle: string;
     outcomeDescription: string;
+    links?: ProjectLinks;
     children?: React.ReactNode;
 };
 
@@ -37,8 +45,10 @@ export default function CaseStudyLayout({
     techStack,
     outcomeTitle,
     outcomeDescription,
+    links,
     children,
 }: CaseStudyLayoutProps) {
+
     return (
         <article>
             {/* HERO */}
@@ -70,6 +80,50 @@ export default function CaseStudyLayout({
                         >
                             Read Case Study
                         </a>
+
+                        {links?.live ? (
+                            <a
+                                href={links.live}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="rounded-full border border-white/15 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+                            >
+                                Live Site
+                            </a>
+                        ) : null}
+
+                        {links?.github ? (
+                            <a
+                                href={links.github}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="rounded-full border border-white/15 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+                            >
+                                GitHub
+                            </a>
+                        ) : null}
+
+                        {links?.appStore ? (
+                            <a
+                                href={links.appStore}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="rounded-full border border-white/15 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+                            >
+                                App Store
+                            </a>
+                        ) : null}
+
+                        {links?.playStore ? (
+                            <a
+                                href={links.playStore}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="rounded-full border border-white/15 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+                            >
+                                Play Store
+                            </a>
+                        ) : null}
 
                         <Link
                             href="/contact"

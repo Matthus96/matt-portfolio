@@ -57,6 +57,9 @@ export default function DavidShepherdKingPage() {
             eyebrow="Interactive Mobile Game"
             title="David: Rise of the Shepherd King"
             description="A faith-based interactive mobile game project built around story progression, biblical locations, quiz logic, completed states and mobile-first gameplay flow."
+            links={{
+                github: "",
+            }}
             snapshot={[
                 { label: "Role", value: "App / Game Developer" },
                 { label: "Type", value: "Mobile Game" },

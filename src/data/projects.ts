@@ -7,6 +7,12 @@ export const projects = [
         href: "/projects/allwear-active-website",
         tags: ["Next.js", "TypeScript", "Tailwind", "Appwrite", "Vercel"],
         featured: true,
+        links: {
+            live: "https://allwearactive.co.za",
+            github: "",
+            appStore: "",
+            playStore: "",
+        },
     },
     {
         title: "Allwear App",
@@ -16,6 +22,12 @@ export const projects = [
         href: "/projects/allwear-app",
         tags: ["Expo", "React Native", "Appwrite", "EAS", "App Store"],
         featured: true,
+        links: {
+            live: "",
+            github: "",
+            appStore: "",
+            playStore: "",
+        },
     },
     {
         title: "David: Rise of the Shepherd King",
@@ -25,6 +37,12 @@ export const projects = [
         href: "/projects/david-shepherd-king",
         tags: ["React Native", "TypeScript", "Game Logic", "UX"],
         featured: true,
+        links: {
+            live: "",
+            github: "",
+            appStore: "",
+            playStore: "",
+        },
     },
 ];
 

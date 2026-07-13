@@ -59,6 +59,10 @@ export default function AllwearActiveWebsitePage() {
             eyebrow="E-commerce Website"
             title="Allwear Active Website"
             description="A responsive e-commerce-style website built for Allwear Active, focused on product discovery, clean category browsing, cart functionality and a polished retail user experience."
+            links={{
+                live: "https://allwearactive.co.za",
+                github: "",
+            }}
             snapshot={[
                 { label: "Role", value: "Front-End Developer" },
                 { label: "Type", value: "Web / E-commerce" },
