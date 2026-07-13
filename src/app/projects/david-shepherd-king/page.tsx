@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CaseStudyLayout from "../../../components/CaseStudyLayout";
+import JsonLd from "../../../components/JsonLd";
 
 export const metadata: Metadata = {
     title: "David: Rise of the Shepherd King Case Study",
@@ -52,7 +53,40 @@ const challenges = [
 ];
 
 export default function DavidShepherdKingPage() {
+    const projectJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "David: Rise of the Shepherd King",
+    applicationCategory: "GameApplication",
+    operatingSystem: "iOS, Android",
+    description:
+        "A faith-based interactive mobile game project built around story progression, biblical locations, quiz logic, completed states and mobile-first gameplay flow.",
+    creator: {
+        "@type": "Person",
+        name: "Matt Wilkinson",
+    },
+    about: [
+        "Interactive Mobile Game",
+        "React Native",
+        "TypeScript",
+        "Game Logic",
+        "Story Progression",
+        "Mobile UI",
+    ],
+    keywords: [
+        "React Native",
+        "TypeScript",
+        "Mobile Game",
+        "Game Logic",
+        "Interactive Story",
+        "Faith-Based Game",
+    ],
+};
+
     return (
+        <>
+        <JsonLd data={projectJsonLd} />
+
         <CaseStudyLayout
             eyebrow="Interactive Mobile Game"
             title="David: Rise of the Shepherd King"
@@ -165,5 +199,6 @@ export default function DavidShepherdKingPage() {
                 </div>
             </section>
         </CaseStudyLayout>
+        </>
     );
 }

@@ -1,5 +1,6 @@
 import CaseStudyLayout from "../../../components/CaseStudyLayout";
 import type { Metadata } from "next";
+import JsonLd from "../../../components/JsonLd";
 
 export const metadata: Metadata = {
     title: "Allwear Active Website Case Study",
@@ -54,7 +55,41 @@ const challenges = [
 ];
 
 export default function AllwearActiveWebsitePage() {
+
+        const projectJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        name: "Allwear Active Website",
+        description:
+            "A responsive e-commerce-style website built for Allwear Active, focused on product discovery, category browsing, cart functionality and a polished retail user experience.",
+        url: "https://allwearactive.co.za",
+        creator: {
+            "@type": "Person",
+            name: "Matt Wilkinson",
+        },
+        about: [
+            "E-commerce Website",
+            "Front-End Development",
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Appwrite",
+        ],
+        keywords: [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Appwrite",
+            "E-commerce Development",
+        ],
+    };
+
     return (
+
+         <>
+        <JsonLd data={projectJsonLd} />
+
         <CaseStudyLayout
             eyebrow="E-commerce Website"
             title="Allwear Active Website"
@@ -170,5 +205,6 @@ export default function AllwearActiveWebsitePage() {
                 </div>
             </section>
         </CaseStudyLayout>
+        </>
     );
 }

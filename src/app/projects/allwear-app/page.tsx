@@ -1,5 +1,6 @@
 import CaseStudyLayout from "../../../components/CaseStudyLayout";
 import type { Metadata } from "next";
+import JsonLd from "../../../components/JsonLd";
 
 export const metadata: Metadata = {
     title: "Allwear App Case Study",
@@ -53,7 +54,41 @@ const challenges = [
 ];
 
 export default function AllwearAppPage() {
+    const projectJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Allwear App",
+    applicationCategory: "ShoppingApplication",
+    operatingSystem: "iOS, Android",
+    description:
+        "A mobile commerce app built for Allwear, focused on product browsing, cart flow, ordering, catalogue management and app-store-ready deployment.",
+    creator: {
+        "@type": "Person",
+        name: "Matt Wilkinson",
+    },
+    about: [
+        "Mobile Commerce App",
+        "Expo",
+        "React Native",
+        "TypeScript",
+        "Appwrite",
+        "EAS",
+    ],
+    keywords: [
+        "Expo",
+        "React Native",
+        "TypeScript",
+        "Appwrite",
+        "Mobile App Development",
+        "E-commerce App",
+    ],
+};
+
     return (
+
+        <>
+        <JsonLd data={projectJsonLd} />
+
         <CaseStudyLayout
             eyebrow="Mobile Commerce App"
             title="Allwear App"
@@ -160,5 +195,6 @@ export default function AllwearAppPage() {
                 </div>
             </section>
         </CaseStudyLayout>
+        </>
     );
 }
